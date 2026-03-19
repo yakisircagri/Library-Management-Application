@@ -371,7 +371,7 @@ void updateprice(char *fname)
 		fread(&book,sizeof(Book),1,fp);
 		if(strcmp(str,book.bookname)==0)
 		{
-		printf("Enter new name price of the book:\n");
+		printf("Enter new price of the book:\n");
 		scanf("%d",&newprice);
 		book.price=newprice;
 		fseek(fp,-sizeof(Book),SEEK_CUR);
